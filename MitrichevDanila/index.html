@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Митричев Данила</title>
+	<link rel="stylesheet" type="text/css" href="styleToIndex.css">
+</head>
+<body>
+
+	<div class="maine">
+
+		<div class="container">
+			<div class="left">
+				<img src="me.jpg" class="me_png">
+				<p class="img_my_name">Даня Митричев</p>
+			</div>
+
+			<div class="right">
+				<p class="about_me">
+					Ещё с детства я увлекся играми и
+					захотел сделать свою. После чего начал копаться что,
+					к чему. И погрузился в это с головой. Благодаря детскому
+					увлечению я нашёл свою будущую профессию!
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="my_works">
+		<div class="container">
+			<h1 class="my_works">Мои работы</h1>
+
+			<div class="snakeGame">
+				<p>1. Змейка</p>
+				<div class="snakeGame_linkBrain">
+					<canvas id="canvas" width="608" height="608"></canvas>
+					<link rel="stylesheet" type="text/css" href="SnakeGame/style/style.css">
+					<script type="text/javascript" src="SnakeGame/brain/brain.js"></script>
+				</div>
+			</div>
+
+			<div class="vizSort">
+				<p>2. Визуализация сортировки</p>
+				<div class="vizSort_linkBrain">
+					<canvas id="cvsViz" width="800" height="450"></canvas>
+
+					<br>
+
+					<div class="buttons">
+						<div class="btns">
+							<button class="btn" onclick="drawArray();">Обновить массив</button>
+							<button class="btn" onclick="drawShuffleArray();">Размешать массив</button>	
+							<button class="btn" onclick="sort();">Отсортировать массив</button>	
+							<button class="btn" onclick="stopSort();">Остановить сортировку</button>	
+
+							<br>
+
+							<p>Длинна массива</p>
+							<input id="lines" type="range" min="100" max="500" step="100" oninput="drawArray()">
+							<p>Скорость сортировки</p>
+							<input id="speed" type="range" min="1" max="1000" step="1" value="1">
+
+							<br>
+
+							<p>Выбор сортировки</p>
+							<select name="select-sort" id="select-sort">
+								<option value="Selection">Сортировка выбором</option>
+								<option value="Coctail">Коктель-сортировка</option>
+								<option value="Bubble">Сортировка пузырьком</option>
+							</select>
+						</div>
+					</div>
+					
+					<script src="VizSort/brain/brain.js"></script>
+					<link rel="stylesheet" href="VizSort/style/style.css">
+				</div>	
+			</div>
+
+			<div class="colorGenerator">
+				<p>3. Генератор цвета</p>
+				<div class="colorGenerator_linkBrain">
+					<option id="randColor" value="rndclr"></option>
+					<div class="colorGeneratorDiv">
+						<button class="colorGeneratorBtn" onclick="randColor(5)">Рандомный цвет</button>
+					</div>
+					<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+					<script src="colorGenerator/randColor.js"></script>
+					<link rel="stylesheet" href="colorGenerator/styleColorGeneretor.css">
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
