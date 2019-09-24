@@ -1,0 +1,80 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+h1{
+	text-align: center;
+}
+p{ font-size: 34px; }
+
+.container{
+	position: relative;
+
+	width: 1220px;
+	margin: 0px auto;
+}
+
+.maine{
+	height: 100vh;
+}
+
+.me_png{
+	border-radius: 50%;
+
+	height: 400px;
+}
+
+.img_my_name{
+	text-align: center;
+	font-size: 34px;
+}
+
+.left{
+	margin: 50px 0px;
+	position: absolute;
+	left: 5px;
+}
+.right{
+	margin: 50px 0px;
+	position: absolute;
+	right: 5px;
+	width: 800px;
+	height: 443px;
+
+	padding: 0px 10px;
+
+	text-align: center;
+
+	font-size: 34px;
+	display: flex;
+}
+
+.about_me{
+	width: 90%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.snakeGame{
+	height: 658px;
+	margin: 50px 0px;
+
+	position: relative;
+}
+.snakeGame_linkBrain{
+	position: absolute;
+	width: 100%;
+	margin: 0px auto;
+}
+
+.vizSort{
+	position: relative;
+	height: 850px;
+	margin: 50px 0px;
+}
+.vizSort_linkBrain{
+	top: 50px;
+}

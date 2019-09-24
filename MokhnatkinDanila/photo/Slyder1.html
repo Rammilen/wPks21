@@ -1,0 +1,153 @@
+	<!DOCTYPE html>
+<html>
+<head>
+  <title>index.html</title>
+</head>
+<body>
+  <style type="text/css">
+    body {
+  background-color: #24292d;
+}
+
+.slider {
+  position: relative;
+  width: 680px;
+  margin: 50px auto;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.slider input[name="switch"] {
+  display: none;
+}
+
+.switch {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  text-align: center;
+  width: 100%;
+}
+
+.switch label {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  margin: 0 3px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+  border-radius: 50%;
+  border: 5px solid #2f363c;
+  background-color: #738290;
+}
+
+#btn1:checked~.switch label[for="btn1"] {
+  background-color: red;
+}
+
+#btn2:checked~.switch label[for="btn2"] {
+  background-color: orange;
+}
+
+#btn3:checked~.switch label[for="btn3"] {
+  background-color: yellow;
+}
+
+#btn4:checked~.switch label[for="btn4"] {
+  background-color: green;
+}
+
+#btn5:checked~.switch label[for="btn5"] {
+  background-color: deepskyblue;
+}
+
+#btn6:checked~.switch label[for="btn6"] {
+  background-color: blue;
+}
+
+#btn7:checked~.switch label[for="btn7"] {
+  background-color: purple;
+}
+
+.slider-inner {
+  overflow: hidden;
+}
+
+.slides {
+  width: 800%;
+  transition: all 0.5s;
+}
+
+.slides img {
+  width: 680px;
+  height: 440px;
+  float: left;
+}
+
+#btn1:checked~slider-inner .slides {
+  transform: translate(0);
+}
+
+#btn2:checked~.slider-inner .slides {
+  transform: translate(-680px);
+}
+
+#btn3:checked~.slider-inner .slides {
+  transform: translate(-1360px);
+}
+
+#btn4:checked~.slider-inner .slides {
+  transform: translate(-2040px);
+}
+
+#btn5:checked~.slider-inner .slides {
+  transform: translate(-2720px);
+}
+
+#btn6:checked~.slider-inner .slides {
+  transform: translate(-3400px);
+}
+
+#btn7:checked~.slider-inner .slides {
+  transform: translate(-4080px);
+}
+  </style>
+<div class="slider">
+  <input type="radio" name="switch" id="btn1" checked>
+  <input type="radio" name="switch" id="btn2">
+  <input type="radio" name="switch" id="btn3">
+   <input type="radio" name="switch" id="btn4">
+    <input type="radio" name="switch" id="btn5">
+    <input type="radio" name="switch" id="btn6">
+    <input type="radio" name="switch" id="btn7">
+  
+  <div class="switch">
+    <label for="btn1"></label>
+    <label for="btn2"></label>
+    <label for="btn3"></label>
+    <label for="btn4"></label>
+    <label for="btn5"></label>
+    <label for="btn6"></label>
+    <label for="btn7"></label>
+  </div>
+  
+  <div class="slider-inner">
+    <div class="slides">
+      <img src="ikons.jpg"/>
+      <img src="institut.jpg"/>
+      <img src="32370740.jpg"/>
+      <img src="985085164.jpg"/>
+      <img src="586994.jpg"/>
+      <img src="321573691.jpg"/>
+      
+      <img src="gimnasy.jpg"/>
+    -->
+      <!--
+      <img src="i.jpg"/>
+    -->
+
+    </div>
+  </div>
+  
+</div>
+</body>
+</html>
