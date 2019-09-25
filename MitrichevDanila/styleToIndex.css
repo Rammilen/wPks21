@@ -10,7 +10,7 @@ p{ font-size: 34px; }
 
 
 
-/*Всплывающее меню*/ /*
+/*Всплывающее меню*/ 
 .section{position: absolute;}
 .greyScreen_on{
 	transition: .1s;
@@ -81,7 +81,7 @@ p{ font-size: 34px; }
 	transform: translateY(75px);
 }
 
-*/
+
 
 .socialLinks span,
 .socialLinks span::before,
