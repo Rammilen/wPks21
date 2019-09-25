@@ -8,12 +8,120 @@ h1{
 }
 p{ font-size: 34px; }
 
-.container{
-	position: relative;
 
+
+/*Всплывающее меню*/ /*
+.section{position: absolute;}
+.greyScreen_on{
+	transition: .1s;
+	position: fixed;
+	z-index: 98;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(0, 0, 0, .8);
+}
+
+.socialLinks{
+	z-index: 100;
+	position: fixed;
+	transition: .2s;
+	margin: 15px;
+	background-color: #fff;
+	display: block;
+	width: 50px;
+	box-shadow: 0px 0px 15px #000;
+	border-radius: 50%;
+	height: 50px;
+}.socialLinks_active{
+	z-index: 100;
+	transition: .5s;
+	transform: rotate(180deg);
+	box-shadow: 0px 0px 15px #5C2EE8;
+	background-color: #333;
+	transform: scale(1.5);
+	margin: 50px 200px;
+}
+
+.section_block{ position: relative; }
+.menu a{
+	z-index: 99;
+	position: absolute;
+	opacity: 0;
+	transition: 0s;
+	left: 50%;
+	font-size: 28px;
+	text-decoration: none;
+	justify-content: center;
+	display: flex;
+	color: #fff;
+	align-items: center;
+	margin: 15px;
+	background-color: green;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	margin: 50px 200px;
+}
+.links{ transition: .1s; opacity: 0; }
+.menu .links_active{
+	opacity: 0;
+	margin: 50px 200px;
+	z-index: 99;
+}
+.menu .links_active:nth-child(1){
+	opacity: 1;
+	transition: .5s;
+	transform: translateX(75px);
+}
+.menu .links_active:nth-child(2){
+	opacity: 1;
+	transition: .5s;
+	transform: translateY(75px);
+}
+
+*/
+
+.socialLinks span,
+.socialLinks span::before,
+.socialLinks span::after{
+	position: absolute;
+	transition: .2s;
+	margin-top: -1px;
+	top: 50%;
+	left: 50%;
+	margin-left: -10px;
+	width: 20px;
+	height: 2px;
+	background-color: #333;
+}
+.socialLinks span::before,
+.socialLinks span::after{
+	content: '';
+	display: block;
+	transition: .1s;
+}
+.socialLinks span::before{
+	transform: translateY(-5px);
+}.socialLinks span::after{
+	transform: translateY(5px);
+}
+.socialLinks_active span{height: 0;}
+.socialLinks_active span::before{
+	transform: rotate(45deg);
+	background-color: #5C2EE8;
+}.socialLinks_active span::after{
+	transform: rotate(-45deg);
+	background-color: #5C2EE8;
+}
+
+.container{
+	transition: .1s;
+	position: relative;
 	width: 1220px;
 	margin: 0px auto;
-}
+}.container_socialLinks_active{transition: .2s; filter: blur(5px);}
 
 .maine{
 	height: 100vh;
@@ -78,3 +186,20 @@ p{ font-size: 34px; }
 .vizSort_linkBrain{
 	top: 50px;
 }
+
+
+
+
+
+
+
+
+
+
+/* Colors
+	survive: #FF4D40 - красный
+	life: #6FFF6A - зеленый
+	future: #5C2EE8 - фиолетовый
+	#33FFE1 - голубой
+	#E8BA2E - желтый
+*/
