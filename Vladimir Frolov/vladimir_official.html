@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/325/PNG/256/Letter-F-icon_34760.png" type="image/x-icon">
   <meta charset="utf-8">
   <title>Frolov-official</title>
   <style type="text/css">
@@ -69,6 +70,10 @@
       border-radius: 30px;
       right: 60px;
       top: 255px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
     .content2 {
       width: 600px;
@@ -171,6 +176,29 @@
 }
 .card:hover .front {transform: rotateY(180deg);}
 .card:hover .back {transform: rotateY(360deg);}
+
+	.block2 {
+	  width: 300px;
+      height: 200px;
+      background: #fff;
+      border-radius: 10px;
+      position: relative;
+      font-family: 'Arctic', cursive;
+      color: #292929;
+      overflow: hidden;
+      border: 2px solid #292929;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin: 5px;
+      font-size: 40px;
+	}
+	.block2:hover {
+      color: #fff;
+      background: #292929;
+      transition: 0.5s;
+    }
   </style>
 </head>
 <body>
@@ -197,6 +225,7 @@
   </div>
 
   <div class="content1">
+  	<a href="slider1.html"><div class="block2">Слайдер</div></a>
   </div>
   <div class="content2">
     <h1 class="txt1">CSS Фичи</h1>
