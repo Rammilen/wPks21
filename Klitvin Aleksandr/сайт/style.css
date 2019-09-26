@@ -1,27 +1,33 @@
+body{
+  background-color: #324855;
+}
+p{
+  color: white;
+}
 section {
   height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: black;
 }
 a{
   color: white;
 }
 .one {
-  background-color: red;
+  background-color: #A80909;
 }
 .two {
-  background-color: orange;
+  background-color: #DB8200;
 }
 .three{
-  background-color: yellow;
+  background-color: #CDCD00;
 }
 .four {
-  background-color: green;
+  background-color: #005C00;
 }
 .five {
-  background-color: blue;
+  background-color: #0051CC;
 }
 .six {
   background-color: black;
@@ -30,10 +36,13 @@ a{
   background-color: purple;
 }
 .eight {
-  background-color: pink;
+  background-color: #868600;
 }
 .nine{
-  background-color: #00F2FF;
+  background-color: #00009F;
+}
+.ten{
+  background-color: #FF7A37;
 }
 .wrapper {
   position: relative;
@@ -48,10 +57,10 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: black;
   transition: 0.5s;
   transform: translateX(-100%);
-  background-color: lightgrey;
+  background-color: #324855;
 }
 .menu_active {
   transform: translateX(0%);
@@ -69,15 +78,15 @@ a{
   font-weight: 900;
 }
 .menu-btn {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   background-color: #333;
   position: absolute;
-  right: -100px;
+  right: -60px;
   top: 10px;
   border-radius: 50%;
   background-color: #00FF00;
-  border: 6px double black; 
+  border: 10px double black; 
 }
 .content {
   transition: 0.5s;
