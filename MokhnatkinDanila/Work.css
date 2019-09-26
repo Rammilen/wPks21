@@ -1,0 +1,59 @@
+body{
+   margin-left: 100px; 
+   margin-right: 100px;
+   background: #000000;
+}
+
+
+.title {
+	margin-top: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.spisok {
+	position: absolute;
+	left: 200px;
+
+
+}
+
+.photo{
+	margin-top: -350px;
+	margin-left: 300px;
+}
+
+.photo img{
+	width: 250px;
+	height: 250px;
+	border-radius: 100% 100% 100% 100%;
+}
+
+.spisok a{
+color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: rgb(212,75,56); /* фон кнопки */
+  padding: .6em 5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+
+}
+.spisok a:hover{
+	background: rgb(232,95,76);
+}
+.spisok a:active{
+	background: rgb(152,15,0);
+}
+
+.spisok li{
+	padding: 15px;
+}
+.all{
+	position: absolute;	
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	width: 60vw;
+	height: 1000px;
+	background: #fff;
+}

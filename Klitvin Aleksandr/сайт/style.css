@@ -1,0 +1,100 @@
+body{
+  background-color: #324855;
+}
+p{
+  color: white;
+}
+section {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+a{
+  color: white;
+}
+.one {
+  background-color: #A80909;
+}
+.two {
+  background-color: #DB8200;
+}
+.three{
+  background-color: #CDCD00;
+}
+.four {
+  background-color: #005C00;
+}
+.five {
+  background-color: #0051CC;
+}
+.six {
+  background-color: black;
+}
+.seven {
+  background-color: purple;
+}
+.eight {
+  background-color: #868600;
+}
+.nine{
+  background-color: #00009F;
+}
+.ten{
+  background-color: #FF7A37;
+}
+.wrapper {
+  position: relative;
+  overflow-x: hidden;
+}
+.menu {
+  position: fixed;
+  left: 0;top: 0;
+  z-index: 99;
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  transition: 0.5s;
+  transform: translateX(-100%);
+  background-color: #324855;
+}
+.menu_active {
+  transform: translateX(0%);
+}
+.menu-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+  flex-direction: column;
+}
+.menu-list a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.menu-btn {
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  position: absolute;
+  right: -60px;
+  top: 10px;
+  border-radius: 50%;
+  background-color: #00FF00;
+  border: 10px double black; 
+}
+.content {
+  transition: 0.5s;
+  position: relative;
+  z-index: 0;
+}
+.content_active {
+  transform: translateX(30%);
+}
+
+
