@@ -8,8 +8,27 @@ h1{
 }
 p{ font-size: 34px; }
 
-
-
+.wait{
+	position: absolute;
+	z-index: 9999;
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+.dont_look{
+	text-align: center;
+	color: white;
+	font-size: 45px;
+	position: fixed;
+	z-index: 999999;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .8);
+}
+.container{
+	filter: blur(8px);
+}
 /*Всплывающее меню*/ /*
 .section{position: absolute;}
 .greyScreen_on{
