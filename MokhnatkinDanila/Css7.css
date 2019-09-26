@@ -109,6 +109,10 @@ body {
   transition-delay: 0.3s;
 
 }
+.menu a:nth-child(4) {
+  transition-delay: 0.4s;
+
+}
 
 .menu_active a:nth-child(1) {
   transform: translate(150%, 0%);
@@ -118,6 +122,9 @@ body {
 }
 .menu_active a:nth-child(3) {
   transform: translate(0%, 150%);
+}
+.menu_active a:nth-child(4) {
+  transform: translate(-110%, 130%);
 }
 .container {
   padding: 1vw;

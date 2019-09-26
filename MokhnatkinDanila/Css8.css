@@ -17,6 +17,9 @@ section {
 .portfolio {
   background-color: #f1c40f;
 }
+.leave {
+  background-color: lightgreen;
+}
 .wrapper {
   position: relative;
   overflow-x: hidden;
