@@ -35,6 +35,9 @@ a{
 .nine{
   background-color: #00F2FF;
 }
+.ten{
+  background-color: #FF7A37;
+}
 .wrapper {
   position: relative;
   overflow-x: hidden;
