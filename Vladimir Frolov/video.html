@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video</title>
+	<style type="text/css">
+		body {
+  			margin: 0;
+  			background-color: #292929;
+		}
+		.video {
+			margin: auto;
+			display: flex;
+		}
+		.text {
+			color: #fff
+		}
+	</style>
+</head>
+<body>
+	<video class="video" controls width="600" height="500">
+  		<source src="Dog.mp4" type="video/mp4"><!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
+  		<source src="Dog.webm" type="video/webm"><!-- WebM/VP8 для Firefox4, Opera, и Chrome -->
+  		<source src="Dog.ogv" type="video/ogg"><!-- Ogg/Vorbis для старых версий браузеров Firefox и Opera -->
+  		<object data="Dog.swf" type="application/x-shockwave-flash"><!-- добавляем видеоконтент для устаревших браузеров, в которых нет поддержки элемента video -->
+    		<param name="movie" value="video.swf">
+  		</object>
+	</video>
+	<h1 class="text" align="center"> Домашнее животное</h1>
+</body>
+</html>
