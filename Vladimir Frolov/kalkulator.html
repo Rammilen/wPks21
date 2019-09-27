@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Калькулятор</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+	<script>
+		function insert(num) {
+			document.form.textview.value = document.form.textview.value+num
+		}
+		function equal(){
+			var exp = document.form.textview.value;
+			if(exp) {
+				document.form.textview.value = eval(exp)
+			}
+		}
+
+		function clean() {
+			document.form.textview.value = "";
+		}
+
+		function back() {
+			var exp = document.form.textview.value;
+			document.form.textview.value = exp.substring(0, exp.length-1);
+		}
+	</script>
+	
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.button {
+			width: 52px;
+			height: 52px;
+			font-size: 25px;
+			margin: 2px;
+			cursor: pointer;
+			background: #fff;
+			color: #292929;
+			border: 2px solid #292929;
+			border-radius: 10px;
+		}
+		.button:hover {
+			background: #292929;
+			color: #fff;
+			transition: 0.3s;
+			border: 2px solid #fff;
+		}
+		.textview {
+			width: 217px;
+			margin: 5px;
+			font-size: 25px;
+			padding: 5px;
+		}
+		.main {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+		}
+		body {
+			margin: 0;
+			padding: 0;
+			background: #292929;
+		}
+
+		.webo4ka {
+			position: absolute;
+			top: 20px;
+			left: 50px;
+			width: 100px;
+			height: 100px;
+			background: #292929;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			font-family: 'Arctic', cursive;
+			border-radius: 30px;
+			border: 2px solid #fff;
+			color: #fff;
+			cursor: pointer;
+		}
+		.webo4ka:hover {
+			background: #292929;
+			border: none;
+			color: #292929;
+		}
+	</style>
+</head>
+<body>
+	<div class="bg"></div>
+	<div class="main">
+		<form name="form">
+			<input class="textview" name="textview">
+		</form>
+		<table>
+			<tr>
+				<td><input class="button" type="button" value="C" onclick="clean()"></td>
+				<td><input class="button" type="button"value="<" onclick="back()"></td>
+				<td><input class="button" type="button" value="/" onclick="insert('/')"></td>
+				<td><input class="button" type="button" value="*" onclick="insert('*')"></td>
+			</tr>
+
+			<tr>
+				<td><input class="button" type="button" value="7" onclick="insert(7)"></td>
+				<td><input class="button" type="button"value="8" onclick="insert(8)"></td>
+				<td><input class="button" type="button" value="9" onclick="insert(9)"></td>
+				<td><input class="button" type="button" value="-" onclick="insert('-')"></td>
+			</tr>
+
+			<tr>
+				<td><input class="button" type="button" value="4" onclick="insert(4)"></td>
+				<td><input class="button" type="button"value="5" onclick="insert(5)"></td>
+				<td><input class="button" type="button" value="6" onclick="insert(6)"></td>
+				<td><input class="button" type="button" value="+" onclick="insert('+')"></td>
+			</tr>
+
+			<tr>
+				<td><input class="button" type="button" value="1" onclick="insert(1)"></td>
+				<td><input class="button" type="button"value="2" onclick="insert(2)"></td>
+				<td><input class="button" type="button" value="3" onclick="insert(3)"></td>
+				<td rowspan="5"><input style="height: 110px" class="button" type="button" value="=" onclick="equal()"></td>
+			</tr>
+
+			<tr>
+				<td colspan="2"><input style="width: 116px" class="button" type="button" value="0" onclick="insert(0)"></td>
+				<td><input class="button" type="button"value="." onclick="insert('.')"></td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="webo4ka"> 
+		Привет и пока :)
+	</div>
+	<div class="webo4ka2" style="display: none;">
+	</div> 
+
+	<script type="text/javascript">
+		setTimeout(function(){$('.webo4ka').fadeOut('fast')},5000);
+
+		setTimeout(function(){$('.webo4ka2').fadeIn('fast')},5000);
+	</script>
+</body>
+</html>

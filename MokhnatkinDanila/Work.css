@@ -1,7 +1,7 @@
 body{
    margin-left: 100px; 
    margin-right: 100px;
-   background: #000000;
+   background: grey;
 }
 
 
@@ -20,7 +20,7 @@ body{
 
 .photo{
 	margin-top: -350px;
-	margin-left: 300px;
+	margin-left: 400px;
 }
 
 .photo img{
@@ -53,7 +53,7 @@ color: #fff; /* цвет текста */
 	margin: 0 auto;
 	left: 0;
 	right: 0;
-	width: 60vw;
+	width: 70vw;
 	height: 1000px;
 	background: #fff;
 }
