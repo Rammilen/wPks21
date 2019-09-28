@@ -9,6 +9,7 @@
 //cvs.offsetWidth
 //cvs.offsetHeight
 var drops = [{}];
+var color = '#431be3';
 update();
 function update(){
 	brain();
@@ -16,7 +17,7 @@ function update(){
 	requestAnimationFrame(update);
 } 
 function brain(){
-	if(rain == 1){
+	if(rain == 1 || rain == 'blod' || rain == 'rainbow'){
 		addDrop();
 		for(i in drops){
 			drops[i].oy += drops[i].ySpeed;
@@ -24,6 +25,13 @@ function brain(){
 				drops.shift();
 			}
 		}
+	}
+	if(rain == 1){
+		color = '#431be3';
+	}else if(rain == 'blod'){
+		color = '#640509';
+	}else if(rain == 'rainbow'){
+		color = randColor();
 	}
 }
 function addDrop(){
@@ -33,15 +41,39 @@ function addDrop(){
 		ox: Math.round(1 - 0.5 + Math.random() * (cvs.width - 1 + 1)),
 		oy: -10,
 		ySpeed: Math.round(2 - 0.5 + Math.random()*(5 - 2 + 1)),
-		rgb: '#431be3'
+		rgb: color
 	});
 }
 function draw(){
-	c.fillStyle = '#ececec';
-	c.fillRect(0,0,cvs.width,cvs.height);
+	if(rain != 'blod'){
+		c.fillStyle = '#ececec';
+		c.fillRect(0,0,cvs.width,cvs.height);
+	}
 	for(i in drops){
 		c.fillStyle = drops[i].rgb;
 		c.fillRect(drops[i].ox, drops[i].oy, drops[i].x, drops[i].y);
 	}
+}
+
+function randColor(rndclr){
+	var r = Math.floor(Math.random() * 256),
+	g = Math.floor(Math.random() * 256),
+	b = Math.floor(Math.random() * 256);
+	var color = '#' + r.toString(16) + g.toString(16) + b.toString(16);
+
+	var page = rndclr;
+
+	if(page == '5'){
+		$('body').css({'background-color': color});
+		$('button').css({'background-color': 'white'});
+		$('button').css({'color': color});
+		$('button').html(color.toString());
+		console.clear();
+		console.log('R: ' + r);
+		console.log('G: ' + g);
+		console.log('B: ' + b);
+	}
+
+	return color;
 }
 });
