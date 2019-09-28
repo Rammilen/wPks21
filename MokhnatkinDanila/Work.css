@@ -11,16 +11,15 @@ body{
 	align-items: center;
 	justify-content: center;
 }
+
 .spisok {
 	position: absolute;
-	left: 200px;
-
-
+	left: 100px;
 }
 
 .photo{
 	margin-top: -350px;
-	margin-left: 400px;
+	margin-left: 350px;
 }
 
 .photo img{
@@ -48,6 +47,7 @@ color: #fff; /* цвет текста */
 .spisok li{
 	padding: 15px;
 }
+
 .all{
 	position: absolute;	
 	margin: 0 auto;
