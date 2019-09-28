@@ -38,3 +38,10 @@ window.onload = function() {
 }
 
 });
+var secret = 0;
+
+var timerSecret = setInterval(function() {
+    if(secret == 'lol'){
+        $('.me_png').attr('src', 'unnamed.jpg');
+    }
+}, 500);
