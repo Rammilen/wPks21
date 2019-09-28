@@ -4,13 +4,13 @@ body {
 	font-family: 'Oswald', sans-serif;
 	margin: 0;
 	padding: 0 auto;
-	background: url(bg.jpg);
+	background: url(img/bg.png);
 }
 
 header {
 	position: absolute;
 	display: block;
-    background: url(3.jpg);
+    background: url(img/3.jpg);
     width: 1880px;
     height: 500px;
     margin-left: 20px;
@@ -79,7 +79,6 @@ header {
 	display: flex;
 	top: 525px;
 	left: 165px;
-	background-color: #fff;
 }
 
 .tr {
@@ -220,6 +219,78 @@ header {
 	transition: 0.2s;
 }
 
+.t6 {
+	text-align: center;
+	position: absolute;
+	text-decoration: none;
+	color: #000;
+	font-size: 55px;
+    top: 190px;
+    left: -145px;
+    width: 75px;
+} 
+
+.t6:hover {
+	border-bottom: 3px solid black;
+	border-radius: 10px;
+	transform: scale(1.1);
+	transition: 0.2s;
+}
+
+.t6:not(:hover) {
+	border-bottom: none;
+	transform: scale(1);
+	transition: 0.2s;
+}
+
+.t7 {
+	text-align: center;
+	position: absolute;
+	text-decoration: none;
+	color: #000;
+	font-size: 55px;
+    top: 190px;
+    left: -55px;
+    width: 75px;
+} 
+
+.t7:hover {
+	border-bottom: 3px solid black;
+	border-radius: 10px;
+	transform: scale(1.1);
+	transition: 0.2s;
+}
+
+.t7:not(:hover) {
+	border-bottom: none;
+	transform: scale(1);
+	transition: 0.2s;
+}
+
+.t8 {
+	text-align: center;
+	position: absolute;
+	text-decoration: none;
+	color: #000;
+	font-size: 55px;
+    top: 190px;
+    left: 35px;
+    width: 75px;
+} 
+
+.t8:hover {
+	border-bottom: 3px solid black;
+	border-radius: 10px;
+	transform: scale(1.1);
+	transition: 0.2s;
+}
+
+.t8:not(:hover) {
+	border-bottom: none;
+	transform: scale(1);
+	transition: 0.2s;
+}
+
 .palka {
 	position: absolute;
 	margin: 0 auto;
@@ -237,7 +308,6 @@ header {
 	display: flex;
 	top: 525px;
 	left: 825px;
-	background-color: #fff;
 }
 
 .pr {
@@ -336,6 +406,58 @@ header {
 	transition: 0.2s;
 }
 
+.p4 {
+	text-align: center;
+	position: absolute;
+	text-decoration: none;
+	color: #000;
+	font-size: 55px;
+    top: 200px;
+    left: -300px;
+    width: 200px;
+    background-color: #F6A75C;
+    border-radius: 10px;
+} 
+
+.p4:hover {
+	border-bottom: 3px solid black;
+	border-radius: 10px;
+	transform: scale(1.1);
+	transition: 0.2s;
+}
+
+.p4:not(:hover) {
+	border-bottom: none;
+	transform: scale(1);
+	transition: 0.2s;
+}
+
+.p5 {
+	text-align: center;
+	position: absolute;
+	text-decoration: none;
+	color: #000;
+	font-size: 55px;
+    top: 200px;
+    left: -75px;
+    width: 200px;
+    background-color: #F93F3F;
+    border-radius: 10px;
+} 
+
+.p5:hover {
+	border-bottom: 3px solid black;
+	border-radius: 10px;
+	transform: scale(1.1);
+	transition: 0.2s;
+}
+
+.p5:not(:hover) {
+	border-bottom: none;
+	transform: scale(1);
+	transition: 0.2s;
+}
+
 .palka2 {
 	position: absolute;
 	margin: 0 auto;
@@ -352,8 +474,7 @@ header {
 	position: absolute;
 	display: flex;
 	top: 525px;
-	left: 1530px;
-	background-color: #fff
+	left: 1520px;
 }
 
 .hm {
@@ -381,9 +502,8 @@ header {
 	color: #000;
 	font-size: 55px;
     top: 105px;
-    left: -100px;
+    left: -90px;
     width: 210px;
-    background-color: #fff;
     border-radius: 10px;
 } 
 
@@ -399,6 +519,84 @@ header {
 	transform: scale(1);
 	transition: 0.2s;
 }
+
+.hm2 {
+	text-align: center;
+	position: absolute;
+	text-decoration: none;
+	color: #000;
+	font-size: 55px;
+    top: 105px;
+    left: 160px;
+    width: 210px;
+    border-radius: 10px;
+} 
+
+.hm2:hover {
+	border-bottom: 3px solid black;
+	border-radius: 10px;
+	transform: scale(1.1);
+	transition: 0.2s;
+}
+
+.hm2:not(:hover) {
+	border-bottom: none;
+	transform: scale(1);
+	transition: 0.2s;
+}
+
+footer {
+position: absolute;
+left: 0; bottom: 0;
+padding: 0px;
+background: #181818;  
+width: 100%;
+margin: 0 auto;
+box-shadow: 1px 1px 15px;
+}
+
+.under {
+	position: relative;
+	font-family: sans-serif;
+	color: #828282;
+	top: 65px;
+	margin-left: 10px;
+	font-size: 12px;
+	cursor: default;
+}
+
+.under:hover {
+	color: #9A9A9A;
+	transition: 0.2s;
+}
+
+.under:not(:hover) {
+	color: #828282;
+	transition: 0.1s;
+}
+
+.soc img {
+	position: relative;
+	bottom: 50px;
+	left: 0; top: -55px;
+	padding: 5px;
+}
+
+.soc img:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.soc img:not(:hover) {
+    transition: 0.2s;
+    transform: scale(1);
+}
+
+.soc hr {
+	top: 0;
+}
+
+
 
 
 
