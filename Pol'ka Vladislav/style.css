@@ -4,7 +4,7 @@ body {
 	font-family: 'Oswald', sans-serif;
 	margin: 0;
 	padding: 0 auto;
-	background: url(img/bg.png);
+	background: url(img/bg.png) no-repeat;
 }
 
 header {
@@ -546,7 +546,7 @@ header {
 }
 
 footer {
-position: absolute;
+position: fixed;
 left: 0; bottom: 0;
 padding: 0px;
 background: #181818;  
