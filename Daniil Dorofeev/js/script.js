@@ -1,4 +1,4 @@
-$('.block').hover(function() {
+$('.menu').hover(function() {
 	$('.linear-gradient').css({
 		right: '0%'
 	});
