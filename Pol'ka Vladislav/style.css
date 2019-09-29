@@ -7,6 +7,12 @@ body {
 	background: url(img/bg.png) no-repeat;
 }
 
+@media screen and (max-width: 1601px) {
+	header {
+		max-width: 97.5%;
+	}
+}
+
 header {
 	position: absolute;
 	display: block;
