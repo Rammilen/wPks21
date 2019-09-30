@@ -181,6 +181,7 @@ body {
 .skills h1 {
 	font-size: 25px;
 	text-align: center;
+	margin-bottom: 0;
 }
 
 .skills i {
@@ -199,6 +200,10 @@ body {
 .skill p {
 	font-size: 19px;
 	line-height: 40px;
+}
+
+.skill:last-child {
+	margin-bottom: 10px;
 }
 
 .glow {
