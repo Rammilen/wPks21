@@ -165,6 +165,7 @@ body {
 	width: 100%;
 	height: 100%;
 	background: -moz-linear-gradient(left, #21d4fd, #b721ff);
+	background: -webkit-linear-gradient(left, #21d4fd, #b721ff);
 	transition: 0.4s;
 }
 
@@ -207,4 +208,80 @@ body {
 
 .glow:hover {
 	box-shadow: inset 0 -2px 0 rgba(1,1,1,0.95);
+}
+
+footer {
+	width: 1120px;
+	height: 50px;
+	margin-bottom: 0 !important;
+	border-radius: 10px 10px 0 0;
+	background-color: white !important;
+}
+
+footer h1 {
+	width: 400px;
+	margin: 0;
+	font-size: 23px;
+	line-height: 50px;
+	margin-left: 10px;
+	cursor: default;
+	float: left;
+}
+
+.social {
+	float: right;
+	width: 160px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.social-circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 35px;
+	width: 35px;
+	border: 1px solid black;
+	border-radius: 500px;
+	margin-left: 7px;
+	margin-right: 7px;
+	transition: 0.3s;
+}
+
+.fa-vk {
+	transition: 0.3s;
+	font-size: 25px;
+}
+
+.fa-discord {
+	font-size: 22px;
+	transition: 0.3s;
+}
+
+.fa-twitch {
+	font-size: 24px;
+	transition: 0.3s;
+}
+
+.social-circle:hover .fa-vk {
+	color: #4872a3;
+}
+
+.social-circle:hover {
+	height: 40px;
+	width: 40px; 
+}
+
+.social-circle:hover .fa-discord {
+	color: #7289da;
+}
+
+.social-circle:hover .fa-twitch {
+	color: #8c00ff;
+}
+
+a {
+	text-decoration: none;
+	color: black;
 }
