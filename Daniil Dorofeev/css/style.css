@@ -17,6 +17,7 @@ body {
 .block {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	background-color: white;
+	margin: 10px;
 }
 
 .container img {
@@ -75,8 +76,7 @@ body {
 .menu {
 	display: inline-block;
 	width: 300px;
-	position: relative;
-	right: 50%;
+	float: left;
 }
 
 .menu-top {
@@ -132,13 +132,161 @@ body {
 }
 
 .content-1 {
-	position: relative;
-	bottom: 417px;
-	display: flex;
-	justify-content: center;
-	width: 785px;
+	display: inline-block;
+	width: 70%;
+	float: left;
+	text-align: center;
 }
 
 .content-1 h1 {
 	font-size: 25px;
+}
+
+.content-1 p {
+	font-size: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.width {
+	width: 100%;
+}
+
+.gradient-block {
+	height: 2px;
+	width: 100%;
+	background-color: gray;
+	overflow: hidden;
+}
+
+.linear-gradient {
+	position: relative;
+	right: 100%;
+	width: 100%;
+	height: 100%;
+	background: -moz-linear-gradient(left, #21d4fd, #b721ff);
+	background: -webkit-linear-gradient(left, #21d4fd, #b721ff);
+	transition: 0.4s;
+}
+
+.skills {
+	width: 70%;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.skills h1 {
+	font-size: 25px;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.skills i {
+	margin: 15px;
+	float: left;
+}
+
+.skill {
+	height: 80px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.skill p {
+	font-size: 19px;
+	line-height: 40px;
+}
+
+.skill:last-child {
+	margin-bottom: 10px;
+}
+
+.glow {
+	transition: 0.3s;
+	cursor: default;
+}
+
+.glow:hover {
+	box-shadow: inset 0 -2px 0 rgba(1,1,1,0.95);
+}
+
+footer {
+	width: 1120px;
+	height: 50px;
+	margin-bottom: 0 !important;
+	border-radius: 10px 10px 0 0;
+	background-color: white !important;
+}
+
+footer h1 {
+	width: 400px;
+	margin: 0;
+	font-size: 23px;
+	line-height: 50px;
+	margin-left: 10px;
+	cursor: default;
+	float: left;
+}
+
+.social {
+	float: right;
+	width: 160px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.social-circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 35px;
+	width: 35px;
+	border: 1px solid black;
+	border-radius: 500px;
+	margin-left: 7px;
+	margin-right: 7px;
+	transition: 0.3s;
+}
+
+.fa-vk {
+	transition: 0.3s;
+	font-size: 25px;
+}
+
+.fa-discord {
+	font-size: 22px;
+	transition: 0.3s;
+}
+
+.fa-twitch {
+	font-size: 24px;
+	transition: 0.3s;
+}
+
+.social-circle:hover .fa-vk {
+	color: #4872a3;
+}
+
+.social-circle:hover {
+	height: 40px;
+	width: 40px; 
+}
+
+.social-circle:hover .fa-discord {
+	color: #7289da;
+}
+
+.social-circle:hover .fa-twitch {
+	color: #8c00ff;
+}
+
+a {
+	text-decoration: none;
+	color: black;
 }
