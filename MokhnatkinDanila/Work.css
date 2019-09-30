@@ -1,7 +1,7 @@
 body{
    margin-left: 100px; 
    margin-right: 100px;
-   background: #000000;
+   background: grey;
 }
 
 
@@ -11,16 +11,15 @@ body{
 	align-items: center;
 	justify-content: center;
 }
+
 .spisok {
 	position: absolute;
-	left: 200px;
-
-
+	left: 100px;
 }
 
 .photo{
 	margin-top: -350px;
-	margin-left: 300px;
+	margin-left: 350px;
 }
 
 .photo img{
@@ -48,12 +47,13 @@ color: #fff; /* цвет текста */
 .spisok li{
 	padding: 15px;
 }
+
 .all{
 	position: absolute;	
 	margin: 0 auto;
 	left: 0;
 	right: 0;
-	width: 60vw;
+	width: 70vw;
 	height: 1000px;
 	background: #fff;
 }

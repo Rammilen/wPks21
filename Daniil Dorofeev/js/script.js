@@ -1,9 +1,9 @@
 $('.menu').hover(function() {
-	$('.gradient').css({
+	$('.linear-gradient').css({
 		right: '0%'
 	});
 }, function() {
-	$('.gradient').css({
+	$('.linear-gradient').css({
 		right: '100%'
 	});
 });
