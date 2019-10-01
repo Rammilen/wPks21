@@ -5,6 +5,7 @@ body {
 	margin: 0;
 	padding: 0 auto;
 	background: url(img/bg.png) no-repeat;
+	transition: all 0.5s;
 }
 
 header {
@@ -291,6 +292,30 @@ header {
 	transition: 0.2s;
 }
 
+.t9 {
+	text-align: center;
+	position: absolute;
+	text-decoration: none;
+	color: #000;
+	font-size: 55px;
+    top: 190px;
+    left: 125px;
+    width: 75px;
+} 
+
+.t9:hover {
+	border-bottom: 3px solid black;
+	border-radius: 10px;
+	transform: scale(1.1);
+	transition: 0.2s;
+}
+
+.t9:not(:hover) {
+	border-bottom: none;
+	transform: scale(1);
+	transition: 0.2s;
+}
+
 .palka {
 	position: absolute;
 	margin: 0 auto;
@@ -388,7 +413,7 @@ header {
 	font-size: 55px;
     top: 105px;
     left: 200px;
-    width: 350px;
+    width: 225px;
     background-color: #5B7BA3;
     border-radius: 10px;
 } 
@@ -453,6 +478,32 @@ header {
 }
 
 .p5:not(:hover) {
+	border-bottom: none;
+	transform: scale(1);
+	transition: 0.2s;
+}
+
+.p6 {
+	text-align: center;
+	position: absolute;
+	text-decoration: none;
+	color: #000;
+	font-size: 55px;
+    top: 200px;
+    left: 150px;
+    width: 290px;
+    background-color: #E2D5F5;
+    border-radius: 10px;
+} 
+
+.p6:hover {
+	border-bottom: 3px solid black;
+	border-radius: 10px;
+	transform: scale(1.1);
+	transition: 0.2s;
+}
+
+.p6:not(:hover) {
 	border-bottom: none;
 	transform: scale(1);
 	transition: 0.2s;
@@ -548,7 +599,7 @@ header {
 footer {
 position: fixed;
 left: 0; bottom: 0;
-padding: 0px;
+padding: 0;
 background: #181818;  
 width: 100%;
 margin: 0 auto;
@@ -556,13 +607,13 @@ box-shadow: 1px 1px 15px;
 }
 
 .under {
-	position: relative;
+	position: absolute;
 	font-family: sans-serif;
 	color: #828282;
-	top: 65px;
 	margin-left: 10px;
 	font-size: 12px;
 	cursor: default;
+	width: 300px;
 }
 
 .under:hover {
@@ -577,9 +628,9 @@ box-shadow: 1px 1px 15px;
 
 .soc img {
 	position: relative;
-	bottom: 50px;
-	left: 0; top: -55px;
+	left: 87%;
 	padding: 5px;
+	top: 3px; 
 }
 
 .soc img:hover {
@@ -592,10 +643,177 @@ box-shadow: 1px 1px 15px;
     transform: scale(1);
 }
 
-.soc hr {
-	top: 0;
-}
+@media screen and (max-width: 1601px) {
+	header {
+		max-width: 97.5%;
+		height: 400px;
+	}
 
+	.soc img {
+		left: 85%;
+	}
+
+	.pic1 {
+		margin-top: 10px;
+		max-width: 11%;
+	}
+
+	.name {
+		font-size: 40px;
+		margin-top: 30px;
+
+	}
+
+	.tr {
+		font-size: 50px;
+	}
+
+	.tricks {
+		left: 125px;
+		top: 425px;
+	}
+
+	.t1, .t2, .t3, .t4, .t5 {
+		font-size: 42px;
+		width: 60px;
+		top: 60px;
+	}
+
+	.t1 {
+		left: -110px;
+	}
+
+	.t2 {
+		left: -45px;
+	}
+
+	.t3 {
+		left: 25px;
+	}
+
+	.t4 {
+		left: 95px;
+	}
+
+	.t5 {
+		left: 165px;
+	}
+
+	.t6, .t7, .t8, .t9 {
+		width: 60px;
+		font-size: 42px;
+		top: 120px;
+	}
+
+	.t6 {
+		left: -110px;
+	}
+
+	.t7 {
+		left: -45px;
+	}
+
+	.t8 {
+		left: 25px;
+	}
+
+	.t9 {
+		left: 95px;
+	}
+
+	.palka {
+		top: 415px;
+		left: 370px;
+		height: 320px;
+	}
+
+	.p1, .p2, .p3, .p4, .p5 {
+		font-size: 42px;
+		width: 215px;
+	}
+
+	.practice {
+		left: 670px;
+		top: 425px;
+	}
+
+	.pr {
+		font-size: 50px;
+	}
+
+	.p1, .p2, .p3 {
+		top: 60px;
+	}
+
+	.p3 {
+		width: 220px;
+	}
+
+	.p4, .p5 {
+		top: 130px;
+		width: 190px;
+	}
+
+	.p6 {
+		top: 130px;
+		width: 250px;
+		font-size: 42px;
+	}
+
+	.p1 {
+		left: -280px;
+	}
+
+	.p2 {
+		left: -45px;
+	}
+
+	.p3 {
+		left: 190px;
+	}
+
+	.p4 {
+		left: -280px;
+	}
+
+	.p5 {
+		left: -70px;
+	}
+
+	.p6 {
+		left: 140px;
+	}
+
+	.palka2 {
+		top: 415px;
+		left: 1100px;
+		height: 350px;
+	}
+
+	.hm1, .hm2 {
+		font-size: 42px;
+		width: 150px;
+		top: 60px;
+	}
+
+	.hm {
+		font-size: 50px;
+	}
+
+	.homework {
+		left: 1250px;
+		top: 425px;
+	}
+
+	.hm1 {
+		left: -130px;
+	}
+
+	.hm2 {
+		left: 50px;
+	}
+
+}
 
 
 
