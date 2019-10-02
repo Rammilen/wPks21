@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Поисковая система</title>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+			background: red;
+		}
+		.search-box {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%; -50%);
+			background: #292929;
+			height: 40px;
+			border-radius: 40px;
+			padding: 10px;
+		}
+		.search-box:hover > .search-txt {
+			width: 240px;
+			padding: 0 6px;
+		}
+		.search-box:hover > .search-btn {
+			background: #fff;
+		}
+		.search-btn {
+			color: red;
+			float: right;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background: #292929;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: 0.4s;
+		}
+		.search-txt {
+			border: none;
+			background: none;
+			outline: none;
+			float: left;
+			padding: 0;
+			color: #fff;
+			font-size: 16px;
+			transition: 0.4s;
+			line-height: 40px;
+			width: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div class="search-box">
+		<input class="search-txt"type="text" name="" placeholder="Поиск...">
+		<a href="" class="search-btn">
+			<i class="fas fa-search"></i>
+		</a>
+	</div>
+</body>
+</html>
